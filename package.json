@@ -37,6 +37,7 @@
     "stylelint-scss": "^3.14.2"
   },
   "dependencies": {
+    "flatpickr": "^4.6.3",
     "normalize.css": "^8.0.1"
   }
 }

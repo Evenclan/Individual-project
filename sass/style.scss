@@ -1,5 +1,15 @@
 @import "variables";
 @import "mixins";
-
 @import "normalize";
 @import "layout";
+@import "media";
+
+// /* Components */
+
+// /* Sections */
+@import "sections/sidebar";
+@import "sections/topnav";
+@import "sections/container";
+
+// /* Pages / Views */
+// @import "pages/registration";
