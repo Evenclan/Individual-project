@@ -8,83 +8,95 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" type="text/css" href="../css/style.css" />
   </head>
   <body>
     <nav class="side-nav">
       <div class="logo">
-        <span class="main-logo">Just do it</span>
+        <span class="main-logo">Just do it</span><i class="fas fa-bars"></i>
       </div>
       <div class="nav-pages">
         <ul class="nav-links">
-          <a href="#"
+          <a href="#GENERAL"
             ><li class="nav-link">
               <img class="svg-nav" src="./images/general.svg" /> General
             </li></a
           >
-          <a href="#"
+          <a href="#DETAILS"
             ><li class="nav-link">
               <img class="svg-nav" src="./images/details.svg" />Details
             </li></a
           >
-          <a href="#"
+          <a href="#LINKS"
             ><li class="nav-link">
               <img class="svg-nav" src="./images/links.svg" />Links
             </li></a
           >
-          <a href="#"
+          <a href="#BANNERS"
             ><li class="nav-link">
               <img class="svg-nav" src="./images/banners.svg" />Banners
             </li></a
           >
-          <a href="#"
+          <a href="#PERSONAL-DATA"
             ><li class="nav-link">
               <img class="svg-nav" src="./images/personaldata.svg" />Personal
               data
             </li></a
           >
-          <a href="#"
+          <a href="#PAYOUT"
             ><li class="nav-link">
               <img class="svg-nav" src="./images/payout.svg" />Payout
             </li></a
           >
-          <a href="#"
+          <a href="#POSTBACK"
             ><li class="nav-link">
               <img class="svg-nav" src="./images/postback.svg" />Postback
             </li></a
           >
         </ul>
         <div class="chat">
-          <p>YOUR MENAGER</p>
-
-          <p>Mikhael E.</p>
+          <h3>YOUR MENAGER</h3>
+          <div class="menager-list">
+            <img src="https://i.imgur.com/XvP4JNy.jpg" /><span
+              class="menager-name"
+            >
+              Filip</span
+            >
+          </div>
         </div>
       </div>
     </nav>
 
     <nav class="top-nav">
-      <div class="money">
+      <div class="icon-wrapper money">
         <a href="#">
           <img class="svg-top-nav" src="./images/wallet.svg" />
           <span class="price"> $1,500.00 </span>
           <img class="svg-top-nav" src="./images/arrow-down.svg" />
         </a>
       </div>
-      <div class="notification">
+      <div class="icon-wrapper notification">
         <a href="#">
           <span class="notification-icon"
             ><img class="svg-top-nav" src="./images/notification.svg" />
           </span>
         </a>
       </div>
-      <div class="account">
+      <div class="icon-wrapper account">
         <a href="#">
           <img class="svg-top-nav" src="images/personaldata.svg" />
           Leonardo Dicaprio</a
         >
       </div>
-      <div class="exit">
+      <div class="icon-wrapper exit">
         <a href="#">
           <span class="exit-icon">
             <img class="svg-top-nav" src="images/quit.svg" />
@@ -94,29 +106,31 @@
     </nav>
 
     <div class="container">
-      <div class="pages">
+      <div class="general">
         <div class="title">
           General Statistics
         </div>
         <div class="row dates">
-          <!-- <label class="booking-option-title">Pick a date</label> -->
           <input type="text" name="date" placeholder="16.05.2016" />
-          <input type="text" name="date" placeholder="16.05.2016" />
-          <div class="refresh"><img src="images/refresh.svg" /></div>
+          <input
+            type="text"
+            class="last"
+            name="date"
+            placeholder="16.05.2016"
+          />
+          <button class="calender-refresh"><img src="images/refresh.svg" /></button>
         </div>
         <div class="row amount">
-          <div class="signups">
+          <div class="data">
             Visit Signups <span class="data-amount">124</span>
           </div>
-          <div class="deposit">
+          <div class="data">
             Net deposit <span class="data-amount">564</span>
           </div>
         </div>
         <div class="row amount">
-          <div class="ftd">FTD<span class="data-amount">445</span></div>
-          <div class="turn-over">
-            Turn over<span class="data-amount">432</span>
-          </div>
+          <div class="data">FTD<span class="data-amount">445</span></div>
+          <div class="data">Turn over<span class="data-amount">432</span></div>
         </div>
         <div class="row chart">
           TUTAJ BEDĄ TABELKI Lorem ipsum dolor sit amet consectetur adipisicing

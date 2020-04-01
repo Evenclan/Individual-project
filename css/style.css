@@ -345,11 +345,12 @@ body {
 }
 
 .side-nav {
-  background-color: #333333;
+  background-color: #181818;
   color: #979797;
   height: 100%;
-  position: fixed;
+  top: 0;
   width: 250px;
+  position: fixed;
 }
 
 .top-nav {
@@ -357,10 +358,9 @@ body {
   display: flex;
   -ms-flex-pack: end;
       justify-content: flex-end;
-  -ms-flex-align: baseline;
-      align-items: baseline;
   background-color: #fff;
   height: 50px;
+  top: 0;
   left: 250px;
   position: fixed;
   width: calc(100% - 250px);
@@ -372,7 +372,7 @@ body {
   -ms-flex-pack: end;
       justify-content: flex-end;
   background-color: #fff;
-  position: relative;
+  position: absolute;
   left: 250px;
   top: 60px;
   max-width: calc(100% - 270px);
@@ -390,13 +390,6 @@ body {
   .container {
     min-width: 100%;
     left: 0;
-  }
-  .dates {
-    -ms-flex-direction: column;
-        flex-direction: column;
-  }
-  .row {
-    margin: solid red 2px;
   }
 }
 
@@ -423,12 +416,12 @@ a {
   padding: 12px;
   margin: 5px 0;
   position: relative;
-  border-left: solid #333333 5px;
+  border-left: solid #181818 5px;
 }
 
 .nav-link:hover {
   color: #F5F5F2;
-  background: #979797;
+  background: #292929;
   border-left: solid #F58220 5px;
 }
 
@@ -439,17 +432,35 @@ a {
 }
 
 .chat {
-  border: solid red 1px;
   padding-left: 20px;
 }
 
-.top-nav > div {
-  border-left: solid blue 1px;
-  padding: 0 8px;
+.chat img {
+  width: 50px;
   height: 50px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+.menager-name {
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.menager-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.top-nav {
+  z-index: 999;
+}
+
+.top-nav > div {
+  border-left: solid #eee 1px;
 }
 
 .svg-top-nav {
@@ -462,6 +473,10 @@ a {
   border: 1px solid #000;
 }
 
+.icon-wrapper {
+  padding: 15px;
+}
+
 .title {
   text-transform: uppercase;
   -ms-flex-pack: start;
@@ -471,7 +486,7 @@ a {
   display: flex;
 }
 
-.pages {
+.general {
   width: 100%;
   margin: auto;
 }
@@ -504,8 +519,13 @@ a {
   height: 43px;
   width: 43px;
   border-radius: 4px;
-  background-color: #eb9800;
-  margin-left: 25px;
+  background-color: #F58220;
+  margin-left: 20px;
+}
+
+.refresh img {
+  width: 20px;
+  position: relative;
 }
 
 .amount > div {
@@ -525,13 +545,6 @@ a {
 input[type=text] {
   height: 20px;
   padding: 10px 0 10px 25px;
-  width: 200px;
-}
-
-.refresh img {
-  width: 20px;
-  position: relative;
-  left: 25%;
-  top: 25%;
+  width: 160px;
 }
 /*# sourceMappingURL=style.css.map */
