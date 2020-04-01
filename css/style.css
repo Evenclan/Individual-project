@@ -345,7 +345,7 @@ body {
 }
 
 .side-nav {
-  background-color: #292929;
+  background-color: #333333;
   color: #979797;
   height: 100%;
   position: fixed;
@@ -369,15 +369,17 @@ body {
 .container {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   background-color: #fff;
   position: relative;
   left: 250px;
-  top: 80px;
-  width: 100%;
-  margin: auto;
+  top: 60px;
+  max-width: calc(100% - 270px);
+  margin: 10px;
 }
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .side-nav {
     display: none;
   }
@@ -386,30 +388,48 @@ body {
     left: 0;
   }
   .container {
-    width: 100%;
+    min-width: 100%;
     left: 0;
+  }
+  .dates {
+    -ms-flex-direction: column;
+        flex-direction: column;
+  }
+  .row {
+    margin: solid red 2px;
   }
 }
 
+a {
+  text-decoration: none;
+  color: #979797;
+}
+
 .logo {
-  padding: 10px;
+  padding: 20px;
+  font-size: 32px;
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
 }
 
 .nav-links {
   list-style-type: none;
   -webkit-padding-start: 0px;
           padding-inline-start: 0px;
+  border-bottom: solid 1px #979797;
 }
 
 .nav-link {
   padding: 12px;
   margin: 5px 0;
   position: relative;
+  border-left: solid #333333 5px;
 }
 
 .nav-link:hover {
   color: #F5F5F2;
   background: #979797;
+  border-left: solid #F58220 5px;
 }
 
 .svg-nav {
@@ -418,9 +438,18 @@ body {
   margin-right: 20px;
 }
 
+.chat {
+  border: solid red 1px;
+  padding-left: 20px;
+}
+
 .top-nav > div {
   border-left: solid blue 1px;
   padding: 0 8px;
+  height: 50px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .svg-top-nav {
@@ -428,17 +457,9 @@ body {
   width: 20px;
 }
 
-.price {
-  padding: 0 10px;
-}
-
-.exit {
-  width: 30px;
-}
-
 .account img {
   border-radius: 50%;
-  border: 2px solid #979797;
+  border: 1px solid #000;
 }
 
 .title {
@@ -452,6 +473,7 @@ body {
 
 .pages {
   width: 100%;
+  margin: auto;
 }
 
 .row {
@@ -468,8 +490,8 @@ body {
 
 .dates {
   padding: 30px;
-  border-top: solid red 1px;
-  border-bottom: solid red 1px;
+  border-top: solid #979797 1px;
+  border-bottom: solid #979797 1px;
 }
 
 .amount {
@@ -502,8 +524,8 @@ body {
 
 input[type=text] {
   height: 20px;
-  width: 25%;
   padding: 10px 0 10px 25px;
+  width: 200px;
 }
 
 .refresh img {

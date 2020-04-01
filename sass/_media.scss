@@ -1,4 +1,4 @@
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 700px) {
   .side-nav {
     display: none;
   }
@@ -9,7 +9,17 @@
   }
 
   .container {
-    width: 100%;
+    min-width: 100%;
     left: 0;
   }
+
+  .dates {
+    flex-direction: column;
+  }
+
+  .row {
+    margin: solid red 2px;
+  }
 }
+
+

@@ -7,6 +7,7 @@
 
 .pages {
   width: 100%;
+  margin: auto;
 }
 
 .row {
@@ -21,8 +22,8 @@
 
 .dates {
   padding: 30px;
-  border-top: solid red 1px;
-  border-bottom: solid red 1px;
+  border-top: solid $nav-main-color 1px;
+  border-bottom: solid $nav-main-color 1px;
 }
 
 .amount {
@@ -52,8 +53,8 @@
 
 input[type=text] {
   height: 20px;
-  width: 25%;
   padding: 10px 0 10px 25px;
+  width: 200px;
 }
 
 .refresh img {

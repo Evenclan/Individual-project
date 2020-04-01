@@ -1,19 +1,25 @@
 .logo {
-  padding: 10px;
+  padding: 20px;
+  font-size: 32px;
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
 }
 
 .nav-links {
   list-style-type: none;
   padding-inline-start: 0px;
+  border-bottom: solid 1px $nav-main-color;
 }
 
 .nav-link {
     padding: 12px;
     margin: 5px 0;
     position: relative;
+    border-left: solid $nav-main-background 5px;
     &:hover {
       color: $nav-hover-color;
       background: $nav-hover-background;
+      border-left: solid $brand-main-color 5px;
     }
   }
 
@@ -21,4 +27,9 @@
     height: 20px;
     width: 20px;
     margin-right: 20px;
+  }
+
+  .chat {
+    border: solid red 1px;
+    padding-left: 20px;
   }
