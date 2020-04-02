@@ -12,6 +12,7 @@ body {
 }
 
 .top-nav {
+  align-items: baseline;
   display: flex;
   justify-content: flex-end;
   background-color: #fff;
@@ -20,15 +21,17 @@ body {
   left: 250px;
   position: fixed;
   width: calc(100% - 250px);
+  z-index: 999;
+  border-bottom: solid #eee 1px;
 }
 
 .container {
   display: flex;
-  justify-content: flex-end;
   background-color: #fff;
   position: absolute;
   left: 250px;
   top: 60px;
-  max-width: calc(100% - 270px);
+  width: calc(100% - 310px);
   margin: 10px;
+  padding: 20px;
 }

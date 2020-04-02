@@ -1,0 +1,45 @@
+.general {
+  width: 100%;
+  margin: auto;
+}
+
+.data-amount {
+  text-align: right;
+}
+
+.dates {
+  padding: 30px;
+  border-top: solid $nav-main-color 1px;
+  border-bottom: solid $nav-main-color 1px;
+}
+
+.amount {
+  justify-content: center;
+  text-align: left;
+}
+
+.calender-refresh-button {
+  height: 43px;
+  width: 43px;
+  border-radius: 4px;
+  background-color: $brand-main-color;
+  margin-left: 20px;
+}
+
+.amount > div {
+  border-bottom: solid grey 1px;
+  padding: 5px;
+  width: 35%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.amount > div:first-child {
+  margin-right: 60px;
+}
+
+input[type=text] {
+  height: 20px;
+  padding: 10px 0 10px 25px;
+  width: 120px;
+}

@@ -1,19 +1,9 @@
-.top-nav {
-  z-index: 999;
-}
-
 .top-nav > div {
   border-left: solid #eee 1px;
 }
 
-.svg-top-nav {
-  height: 20px;
-  width: 20px;
-}
-
-.account img {
-  border-radius: 50%;
-  border: 1px solid #000;
+.top-nav > div:hover {
+  background-color: #eee;
 }
 
 .icon-wrapper {
