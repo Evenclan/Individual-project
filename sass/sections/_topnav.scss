@@ -1,11 +1,39 @@
-.top-nav > div {
+.icon-wrapper {
   border-left: solid #eee 1px;
 }
 
-.top-nav > div:hover {
+.icon-wrapper:hover {
   background-color: #eee;
 }
 
 .icon-wrapper {
   padding: 15px;
+}
+
+.notification {
+  position: relative;
+}
+
+.price {
+  margin: 0 7px;
+}
+
+.notification-dot {
+  z-index: 2;
+  border-radius: 50%;
+  width: 7px;
+  height: 7px;
+  top: 12px;
+  left: 24px;
+  position: absolute;
+  background-color: $brand-main-color;
+}
+
+.logo-top-nav {
+  padding: 5px;
+  font-size: 32px;
+  font-family: 'Dancing Script', cursive;
+  color: #fff;
+  margin-left: 20px;
+  display: none;
 }

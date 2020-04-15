@@ -1,0 +1,37 @@
+.calender-refresh-button {
+  height: 43px;
+  width: 43px;
+  border-radius: 4px;
+  background-color: $brand-main-color;
+  margin-left: 20px;
+}
+
+.btn {
+  padding: 10px 15px;
+  margin: 10px 20px;
+  border: none;
+  position: relative;
+  color: $nav-main-color;
+  border-radius: 3px;
+  background-color: #fff;
+  box-shadow: 1px 2px;
+  .fa-circle {
+    margin-right: 6px;
+  }
+
+  .i-signups {
+    color: #8DBEC8;
+  }
+
+  .i-ftd {
+    color: $brand-main-color;
+  }
+
+  .i-earned {
+    color: $online;
+  }
+}
+
+.btn-active {
+  background-color: #9797971f;
+}

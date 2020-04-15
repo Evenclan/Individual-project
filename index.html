@@ -23,7 +23,7 @@
     <nav class="side-nav">
       <div class="logo">
         <span class="main-logo">Just do it</span>
-        <i class="fas fa-bars"></i>
+        <i class="fas fa-bars hamburger-btn"></i>
       </div>
       <div class="nav-pages">
         <ul class="nav-links">
@@ -66,17 +66,19 @@
         <div class="chat">
           <h3>YOUR MENAGER</h3>
           <div class="menager-list">
-            <img src="https://i.imgur.com/XvP4JNy.jpg" /><span
-              class="menager-name"
-            >
-              Filip</span
-            >
+            <div class="online-dot"></div>
+            <img src="https://i.imgur.com/XvP4JNy.jpg" />
+            <span class="menager-name">Filip</span>
           </div>
         </div>
       </div>
     </nav>
 
     <nav class="top-nav">
+      <div class="logo-top-nav">
+        <span class="main-logo">Just do it</span>
+        <i class="fas fa-bars hamburger-btn"></i>
+      </div>
       <div class="icon-wrapper money">
         <a href="#">
           <i class="icon icon-wallet"></i>
@@ -89,6 +91,7 @@
           <span class="notification-icon"
             ><i class="icon icon-notification"></i>
           </span>
+          <div class="notification-dot"></div>
         </a>
       </div>
       <div class="icon-wrapper account">
@@ -106,19 +109,16 @@
       </div>
     </nav>
 
-    <div class="container">
-      <div class="general">
+    <div class="container active">
+      <section id="general">
         <div class="title">
           General Statistics
         </div>
         <div class="row dates">
-          <input type="text" name="date" placeholder="16.05.2016" />
-          <input
-            type="text"
-            class="last"
-            name="date"
-            placeholder="16.05.2016"
-          />
+          <div class="calender">
+            <input type="text" class="start-date" name="start-date" placeholder="16.05.2016" />
+            <input type="text" class="end-date" name="end-date" placeholder="16.05.2016" />
+          </div>
           <button class="calender-refresh-button">
             <i class="icon icon-refresh"></i>
           </button>
@@ -135,12 +135,225 @@
           <div class="data">FTD<span class="data-amount">445</span></div>
           <div class="data">Turn over<span class="data-amount">432</span></div>
         </div>
-        <div class="row chart">
-          TUTAJ BEDĄ TABELKI Lorem ipsum dolor sit amet consectetur adipisicing
+        <div class="row chart-title">
+          Earning chart
         </div>
-      </div>
+        <div class="row chart">
+          <button class="btn btn-signups btn-active">
+            <i class="fas fa-circle i-signups"></i> Signups
+          </button>
+          <button class="btn btn-ftd btn-active">
+            <i class="fas fa-circle i-ftd"></i> FTD
+          </button>
+          <button class="btn btn-earned">
+            <i class="fas fa-circle i-earned"></i> Earned
+          </button>
+        </div>
+        <div class="row">
+          <canvas id="myChart"></canvas>
+        </div>
+      </section>
     </div>
 
+    <div class="container">
+      <section id="details">
+        <div class="title">
+          Details
+        </div>
+        <div class="row">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo
+          cum qui eveniet blanditiis eius suscipit fugit, molestiae provident
+          ipsa, nobis inventore est voluptatem labore animi dolorem doloribus
+          sequi repudiandae rem dignissimos dicta eos! Veniam impedit maiores
+          beatae cum obcaecati qui assumenda quaerat ipsum corrupti esse,
+          corporis veritatis quos ea! Dolorum, fugiat. Eveniet corrupti non,
+          quis dolores commodi officiis aliquam. Temporibus quibusdam odit
+          consequatur accusamus tenetur. Laborum possimus dicta nisi, tempora
+          assumenda tempore voluptatum tenetur hic fugit. Assumenda unde
+          temporibus laboriosam magnam minus a accusantium nesciunt quasi odit
+          natus sit, placeat optio quis tempora, non voluptatem ipsum doloremque
+          quae eos, adipisci at similique maxime? At suscipit quidem
+          perspiciatis numquam, odio, natus officiis quas culpa eum rem neque,
+          fugiat facere nisi minima quis necessitatibus enim doloremque quam
+          molestiae! Voluptatum natus cum officia unde non cumque, illo
+          temporibus labore facere repudiandae, reiciendis voluptas sit nesciunt
+          nostrum totam velit molestiae sunt nihil tempore deleniti, atque
+          culpa. Corporis neque amet odio rem quas beatae, similique quos,
+          itaque quaerat quae cum debitis porro! Quidem cum, alias quas
+          repudiandae sapiente facere assumenda, similique adipisci ratione
+          exercitationem, aliquid ut. Beatae provident ipsum aspernatur eveniet
+          dignissimos voluptates minima voluptatem, quos quaerat facilis harum
+          sint quam quis facere modi reprehenderit ducimus consequatur vero! Sed
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section id="links">
+        <div class="title">
+          Links
+        </div>
+        <div class="row">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo
+          cum qui eveniet blanditiis eius suscipit fugit, molestiae provident
+          ipsa, nobis inventore est voluptatem labore animi dolorem doloribus
+          sequi repudiandae rem dignissimos dicta eos! Veniam impedit maiores
+          beatae cum obcaecati qui assumenda quaerat ipsum corrupti esse,
+          corporis veritatis quos ea! Dolorum, fugiat. Eveniet corrupti non,
+          quis dolores commodi officiis aliquam. Temporibus quibusdam odit
+          consequatur accusamus tenetur. Laborum possimus dicta nisi, tempora
+          assumenda tempore voluptatum tenetur hic fugit. Assumenda unde
+          temporibus laboriosam magnam minus a accusantium nesciunt quasi odit
+          natus sit, placeat optio quis tempora, non voluptatem ipsum doloremque
+          quae eos, adipisci at similique maxime? At suscipit quidem
+          perspiciatis numquam, odio, natus officiis quas culpa eum rem neque,
+          fugiat facere nisi minima quis necessitatibus enim doloremque quam
+          molestiae! Voluptatum natus cum officia unde non cumque, illo
+          temporibus labore facere repudiandae, reiciendis voluptas sit nesciunt
+          nostrum totam velit molestiae sunt nihil tempore deleniti, atque
+          culpa. Corporis neque amet odio rem quas beatae, similique quos,
+          itaque quaerat quae cum debitis porro! Quidem cum, alias quas
+          repudiandae sapiente facere assumenda, similique adipisci ratione
+          exercitationem, aliquid ut. Beatae provident ipsum aspernatur eveniet
+          dignissimos voluptates minima voluptatem, quos quaerat facilis harum
+          sint quam quis facere modi reprehenderit ducimus consequatur vero! Sed
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section id="banners">
+        <div class="title">
+          Banners
+        </div>
+        <div class="row">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo
+          cum qui eveniet blanditiis eius suscipit fugit, molestiae provident
+          ipsa, nobis inventore est voluptatem labore animi dolorem doloribus
+          sequi repudiandae rem dignissimos dicta eos! Veniam impedit maiores
+          beatae cum obcaecati qui assumenda quaerat ipsum corrupti esse,
+          corporis veritatis quos ea! Dolorum, fugiat. Eveniet corrupti non,
+          quis dolores commodi officiis aliquam. Temporibus quibusdam odit
+          consequatur accusamus tenetur. Laborum possimus dicta nisi, tempora
+          assumenda tempore voluptatum tenetur hic fugit. Assumenda unde
+          temporibus laboriosam magnam minus a accusantium nesciunt quasi odit
+          natus sit, placeat optio quis tempora, non voluptatem ipsum doloremque
+          quae eos, adipisci at similique maxime? At suscipit quidem
+          perspiciatis numquam, odio, natus officiis quas culpa eum rem neque,
+          fugiat facere nisi minima quis necessitatibus enim doloremque quam
+          molestiae! Voluptatum natus cum officia unde non cumque, illo
+          temporibus labore facere repudiandae, reiciendis voluptas sit nesciunt
+          nostrum totam velit molestiae sunt nihil tempore deleniti, atque
+          culpa. Corporis neque amet odio rem quas beatae, similique quos,
+          itaque quaerat quae cum debitis porro! Quidem cum, alias quas
+          repudiandae sapiente facere assumenda, similique adipisci ratione
+          exercitationem, aliquid ut. Beatae provident ipsum aspernatur eveniet
+          dignissimos voluptates minima voluptatem, quos quaerat facilis harum
+          sint quam quis facere modi reprehenderit ducimus consequatur vero! Sed
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section id="personal-data">
+        <div class="title">
+          Personal Data
+        </div>
+        <div class="row">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo
+          cum qui eveniet blanditiis eius suscipit fugit, molestiae provident
+          ipsa, nobis inventore est voluptatem labore animi dolorem doloribus
+          sequi repudiandae rem dignissimos dicta eos! Veniam impedit maiores
+          beatae cum obcaecati qui assumenda quaerat ipsum corrupti esse,
+          corporis veritatis quos ea! Dolorum, fugiat. Eveniet corrupti non,
+          quis dolores commodi officiis aliquam. Temporibus quibusdam odit
+          consequatur accusamus tenetur. Laborum possimus dicta nisi, tempora
+          assumenda tempore voluptatum tenetur hic fugit. Assumenda unde
+          temporibus laboriosam magnam minus a accusantium nesciunt quasi odit
+          natus sit, placeat optio quis tempora, non voluptatem ipsum doloremque
+          quae eos, adipisci at similique maxime? At suscipit quidem
+          perspiciatis numquam, odio, natus officiis quas culpa eum rem neque,
+          fugiat facere nisi minima quis necessitatibus enim doloremque quam
+          molestiae! Voluptatum natus cum officia unde non cumque, illo
+          temporibus labore facere repudiandae, reiciendis voluptas sit nesciunt
+          nostrum totam velit molestiae sunt nihil tempore deleniti, atque
+          culpa. Corporis neque amet odio rem quas beatae, similique quos,
+          itaque quaerat quae cum debitis porro! Quidem cum, alias quas
+          repudiandae sapiente facere assumenda, similique adipisci ratione
+          exercitationem, aliquid ut. Beatae provident ipsum aspernatur eveniet
+          dignissimos voluptates minima voluptatem, quos quaerat facilis harum
+          sint quam quis facere modi reprehenderit ducimus consequatur vero! Sed
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section id="payout">
+        <div class="title">
+          Payout
+        </div>
+        <div class="row">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo
+          cum qui eveniet blanditiis eius suscipit fugit, molestiae provident
+          ipsa, nobis inventore est voluptatem labore animi dolorem doloribus
+          sequi repudiandae rem dignissimos dicta eos! Veniam impedit maiores
+          beatae cum obcaecati qui assumenda quaerat ipsum corrupti esse,
+          corporis veritatis quos ea! Dolorum, fugiat. Eveniet corrupti non,
+          quis dolores commodi officiis aliquam. Temporibus quibusdam odit
+          consequatur accusamus tenetur. Laborum possimus dicta nisi, tempora
+          assumenda tempore voluptatum tenetur hic fugit. Assumenda unde
+          temporibus laboriosam magnam minus a accusantium nesciunt quasi odit
+          natus sit, placeat optio quis tempora, non voluptatem ipsum doloremque
+          quae eos, adipisci at similique maxime? At suscipit quidem
+          perspiciatis numquam, odio, natus officiis quas culpa eum rem neque,
+          fugiat facere nisi minima quis necessitatibus enim doloremque quam
+          molestiae! Voluptatum natus cum officia unde non cumque, illo
+          temporibus labore facere repudiandae, reiciendis voluptas sit nesciunt
+          nostrum totam velit molestiae sunt nihil tempore deleniti, atque
+          culpa. Corporis neque amet odio rem quas beatae, similique quos,
+          itaque quaerat quae cum debitis porro! Quidem cum, alias quas
+          repudiandae sapiente facere assumenda, similique adipisci ratione
+          exercitationem, aliquid ut. Beatae provident ipsum aspernatur eveniet
+          dignissimos voluptates minima voluptatem, quos quaerat facilis harum
+          sint quam quis facere modi reprehenderit ducimus consequatur vero! Sed
+        </div>
+      </section>
+    </div>
+
+    <div class="container">
+      <section id="postback">
+        <div class="title">
+          Postback
+        </div>
+        <div class="row">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo
+          cum qui eveniet blanditiis eius suscipit fugit, molestiae provident
+          ipsa, nobis inventore est voluptatem labore animi dolorem doloribus
+          sequi repudiandae rem dignissimos dicta eos! Veniam impedit maiores
+          beatae cum obcaecati qui assumenda quaerat ipsum corrupti esse,
+          corporis veritatis quos ea! Dolorum, fugiat. Eveniet corrupti non,
+          quis dolores commodi officiis aliquam. Temporibus quibusdam odit
+          consequatur accusamus tenetur. Laborum possimus dicta nisi, tempora
+          assumenda tempore voluptatum tenetur hic fugit. Assumenda unde
+          temporibus laboriosam magnam minus a accusantium nesciunt quasi odit
+          natus sit, placeat optio quis tempora, non voluptatem ipsum doloremque
+          quae eos, adipisci at similique maxime? At suscipit quidem
+          perspiciatis numquam, odio, natus officiis quas culpa eum rem neque,
+          fugiat facere nisi minima quis necessitatibus enim doloremque quam
+          molestiae! Voluptatum natus cum officia unde non cumque, illo
+          temporibus labore facere repudiandae, reiciendis voluptas sit nesciunt
+          nostrum totam velit molestiae sunt nihil tempore deleniti, atque
+          culpa. Corporis neque amet odio rem quas beatae, similique quos,
+          itaque quaerat quae cum debitis porro! Quidem cum, alias quas
+          repudiandae sapiente facere assumenda, similique adipisci ratione
+          exercitationem, aliquid ut. Beatae provident ipsum aspernatur eveniet
+          dignissimos voluptates minima voluptatem, quos quaerat facilis harum
+          sint quam quis facere modi reprehenderit ducimus consequatur vero! Sed
+        </div>
+      </section>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>

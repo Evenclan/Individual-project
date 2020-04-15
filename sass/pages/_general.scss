@@ -9,7 +9,6 @@
 
 .dates {
   padding: 30px;
-  border-top: solid $nav-main-color 1px;
   border-bottom: solid $nav-main-color 1px;
 }
 
@@ -18,20 +17,14 @@
   text-align: left;
 }
 
-.calender-refresh-button {
-  height: 43px;
-  width: 43px;
-  border-radius: 4px;
-  background-color: $brand-main-color;
-  margin-left: 20px;
-}
-
-.amount > div {
+.data {
   border-bottom: solid grey 1px;
   padding: 5px;
   width: 35%;
   display: flex;
   justify-content: space-between;
+  color: $nav-main-color;
+  font-size: $paragraph-font-size;
 }
 
 .amount > div:first-child {
@@ -40,6 +33,32 @@
 
 input[type=text] {
   height: 20px;
-  padding: 10px 0 10px 25px;
+  padding: 5px 0 5px 20px;
   width: 120px;
+  border: none;
 }
+
+input[type=text]:first-child {
+  border-right: solid $nav-main-color 1px;
+}
+
+.chart-title {
+  justify-content: flex-start;
+  color: $nav-main-color;
+  font-size: $paragraph-font-size;
+  font-weight: 800;
+  margin-top: 40px;
+  margin-left: 10%;
+}
+
+.calender {
+  border: solid $nav-main-color 1px;
+  border-radius: 3px;
+  padding: 5px;
+}
+
+.calender:hover {
+  border: solid $nav-main-background 1px;
+}
+
+

@@ -27,11 +27,11 @@ body {
 
 .container {
   display: flex;
+  flex-direction: column;
   background-color: #fff;
-  position: absolute;
+  width: calc(100% - 270px);
+  margin: 10px;
+  position: relative;
   left: 250px;
   top: 60px;
-  width: calc(100% - 310px);
-  margin: 10px;
-  padding: 20px;
 }

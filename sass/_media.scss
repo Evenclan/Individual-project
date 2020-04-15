@@ -1,25 +1,69 @@
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
+  .icon-wrapper {
+    display: none;
+  }
+
   .side-nav {
-    animation: fadeIn ease 0.5s;
-    animation-timing-function:linear;
-    animation-fill-mode:forwards;
+    animation: fadeIn ease 0.4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+  }
+
+  .top-nav {
+    animation: fullWidth ease 0.4s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    width: 100%;
+    justify-content: flex-start;
+    background: $nav-main-background;
+    .logo-top-nav {
+      display: block;
+    }
+  }
+
+  .container {
+    animation: fullWidth ease 0.45s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    width: calc(100% - 20px);
   }
 
   @keyframes fadeIn {
-    0% { opacity: 1;
+    0% {
+      opacity: 1;
     }
-    30% {
+
+    25% {
+      left: -100px;
+    }
+
+    50% {
       opacity: 0.5;
-      height: 50%;
+      left: -200px;
     }
-    70% {
+    75% {
       opacity: 0.1;
+      left: -300px;
     }
     100% {
       opacity: 0;
-      top: -500px;
-      height: 20%;
-      width: 20%;
+      left: -400px;
+    }
+  }
+
+  @keyframes fadeOut {
+    0% {
+      left: -400px;
+      opacity: 0.1;
+    }
+
+    50% {
+      left: -200px;
+    }
+
+    100% {
+      left: 0;
+      opacity: 1;
     }
   }
 
@@ -35,22 +79,5 @@
     100% {
       left: 0;
     }
-
-  }
-
-  .top-nav {
-    animation: fullWidth ease 0.4s;
-    animation-timing-function:linear;
-    animation-fill-mode:forwards;
-    width: 100%;
-
-  }
-
-  .container {
-    animation: fullWidth ease 0.45s;
-    animation-timing-function:linear;
-    animation-fill-mode:forwards;
-    width: calc(100% - 60px);
   }
 }
-

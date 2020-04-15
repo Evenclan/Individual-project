@@ -1,8 +1,9 @@
 .logo {
-  padding: 20px;
+  padding: 5px;
   font-size: 32px;
   font-family: 'Dancing Script', cursive;
   color: #fff;
+  margin-left: 20px;
 }
 
 .fa-bars {
@@ -52,4 +53,16 @@
   .menager-list {
     display: flex;
     align-items: center;
+    position: relative;
+  }
+
+  .online-dot {
+    z-index: 2;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+    left: 36px;
+    top: 0;
+    background-color: $online;
+    position: absolute;
   }

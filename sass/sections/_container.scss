@@ -3,10 +3,21 @@
   justify-content: flex-start;
   padding: 10px;
   display: flex;
+  border-bottom: solid $nav-main-color 1px;
+  color: $nav-main-color;
+  font-size: 1.3rem;
 }
 
 .row {
   padding: 20px;
   display: flex;
   justify-content: center;
+}
+
+.container {
+  display: none;
+}
+
+.active {
+  display: block;
 }
