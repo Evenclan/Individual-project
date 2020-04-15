@@ -4,6 +4,22 @@
   border-radius: 4px;
   background-color: $brand-main-color;
   margin-left: 20px;
+  &:hover {
+    background-color: #F69332;
+  }
+}
+
+.brand-button {
+  border-radius: 4px;
+  background-color: $brand-main-color;
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 20px;
+  border: none;
+  margin: 2px;
+  &:hover {
+    background-color: #F69332;
+  }
 }
 
 .btn {

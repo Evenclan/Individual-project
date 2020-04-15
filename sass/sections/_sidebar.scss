@@ -54,6 +54,9 @@
     display: flex;
     align-items: center;
     position: relative;
+    &:hover {
+      color: $brand-main-color;
+    }
   }
 
   .online-dot {

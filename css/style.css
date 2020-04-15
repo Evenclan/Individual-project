@@ -462,6 +462,14 @@ a {
   color: #979797;
 }
 
+.table-link {
+  color: #8DBEC8;
+}
+
+.table-link:hover {
+  color: #F58220;
+}
+
 /* top nav */
 .icon-personaldata {
   border-radius: 50%;
@@ -479,12 +487,42 @@ a {
   color: #fff;
 }
 
+.fa-link {
+  margin-right: 20px;
+}
+
+.fa-link:hover {
+  color: #F58220;
+}
+
+.fa-trash-alt:hover {
+  color: #F58220;
+}
+
 .calender-refresh-button {
   height: 43px;
   width: 43px;
   border-radius: 4px;
   background-color: #F58220;
   margin-left: 20px;
+}
+
+.calender-refresh-button:hover {
+  background-color: #F69332;
+}
+
+.brand-button {
+  border-radius: 4px;
+  background-color: #F58220;
+  color: #fff;
+  padding: 6px 14px;
+  font-size: 20px;
+  border: none;
+  margin: 2px;
+}
+
+.brand-button:hover {
+  background-color: #F69332;
 }
 
 .btn {
@@ -580,6 +618,10 @@ a {
   -ms-flex-align: center;
       align-items: center;
   position: relative;
+}
+
+.menager-list:hover {
+  color: #F58220;
 }
 
 .online-dot {
@@ -727,5 +769,36 @@ input[type=text]:first-child {
 
 .calender:hover {
   border: solid #181818 1px;
+}
+
+table {
+  width: 70%;
+  border-collapse: collapse;
+  font-weight: 600;
+  color: #979797;
+}
+
+table tr {
+  border-bottom: 1px solid #979797;
+}
+
+table tr:hover {
+  background-color: #F5F5F2;
+}
+
+table tr:hover .table-icons {
+  opacity: 1;
+}
+
+td {
+  border-top: 1px solid #979797;
+  padding: 12px;
+}
+
+.table-icons {
+  opacity: 0;
+  text-align: right;
+  min-width: 60px;
+  max-width: 65px;
 }
 /*# sourceMappingURL=style.css.map */

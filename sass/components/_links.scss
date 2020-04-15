@@ -3,3 +3,9 @@ a {
   color: #979797;
 }
 
+.table-link {
+  color: #8DBEC8;
+  &:hover {
+    color: $brand-main-color;
+  }
+}

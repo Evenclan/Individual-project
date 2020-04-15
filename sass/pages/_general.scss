@@ -36,10 +36,9 @@ input[type=text] {
   padding: 5px 0 5px 20px;
   width: 120px;
   border: none;
-}
-
-input[type=text]:first-child {
-  border-right: solid $nav-main-color 1px;
+  &:first-child {
+    border-right: solid $nav-main-color 1px;
+  }
 }
 
 .chart-title {
@@ -55,10 +54,8 @@ input[type=text]:first-child {
   border: solid $nav-main-color 1px;
   border-radius: 3px;
   padding: 5px;
+  &:hover {
+    border: solid $nav-main-background 1px;
+  }
 }
-
-.calender:hover {
-  border: solid $nav-main-background 1px;
-}
-
 

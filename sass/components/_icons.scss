@@ -17,3 +17,14 @@
 .icon-refresh {
   color: #fff;
 }
+
+.fa-link {
+  margin-right: 20px;
+  &:hover {
+    color: $brand-main-color;
+  }
+}
+
+.fa-trash-alt:hover {
+    color: $brand-main-color;
+  }
