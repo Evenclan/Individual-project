@@ -1,6 +1,18 @@
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .icon-wrapper {
     display: none;
+  }
+
+  .form-field {
+    flex-direction: column;
+    width: 200px;
+    & input {
+      margin: none;
+    }
+    & label {
+      text-align: center;
+      margin-bottom: 5px;
+    }
   }
 
   .side-nav {

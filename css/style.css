@@ -383,9 +383,21 @@ body {
   top: 60px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
   .icon-wrapper {
     display: none;
+  }
+  .form-field {
+    -ms-flex-direction: column;
+        flex-direction: column;
+    width: 200px;
+  }
+  .form-field input {
+    margin: none;
+  }
+  .form-field label {
+    text-align: center;
+    margin-bottom: 5px;
   }
   .side-nav {
     animation: fadeIn ease 0.4s;
@@ -493,10 +505,12 @@ a {
 
 .fa-link:hover {
   color: #F58220;
+  cursor: pointer;
 }
 
 .fa-trash-alt:hover {
   color: #F58220;
+  cursor: pointer;
 }
 
 .calender-refresh-button {
@@ -515,7 +529,7 @@ a {
   border-radius: 4px;
   background-color: #F58220;
   color: #fff;
-  padding: 6px 14px;
+  padding: 8px 18px;
   font-size: 20px;
   border: none;
   margin: 2px;
@@ -622,6 +636,7 @@ a {
 
 .menager-list:hover {
   color: #F58220;
+  cursor: pointer;
 }
 
 .online-dot {
@@ -740,14 +755,14 @@ a {
   margin-right: 60px;
 }
 
-input[type=text] {
+.start-date, .end-date {
   height: 20px;
   padding: 5px 0 5px 20px;
   width: 120px;
   border: none;
 }
 
-input[type=text]:first-child {
+.start-date:first-child, .end-date:first-child {
   border-right: solid #979797 1px;
 }
 
@@ -800,5 +815,32 @@ td {
   text-align: right;
   min-width: 60px;
   max-width: 65px;
+}
+
+.form-field {
+  padding: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  margin: 10px;
+  color: #979797;
+  font-weight: 600;
+  width: 400px;
+}
+
+.form-field input {
+  margin-left: 40px;
+  padding: 6px 12px;
+  border: 1px solid #979797;
+  border-radius: 5px;
+}
+
+#personal-data .row {
+  border-bottom: solid #979797 1px;
+}
+
+#personal-data .row:last-child {
+  border-bottom: none;
 }
 /*# sourceMappingURL=style.css.map */

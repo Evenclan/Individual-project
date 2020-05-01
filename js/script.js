@@ -1,28 +1,13 @@
-// function titleClickHandler() {
-//   // event.preventDefault();
-//   const clickedElement = this;
+const select = {
+  menu: {
+    navLinks: '.nav-pages',
+  }
 
-//   const activeLinks = document.querySelectorAll('.nav-link');
+};
 
-//   for (let activeLink of activeLinks) {
-//     if (clickedElement !== activeLink) activeLink.classList.remove('active');
-//   }
+const links = document.querySelectorAll(select.menu.navLinks);
 
-//   clickedElement.classList.toggle('active');
-
-//   console.log(activeLinks);
-// }
-
-// titleClickHandler();
-
-// const activeLink = document.querySelectorAll('.lol');
-
-// console.log(activeLink);
-
-document.querySelector('.hamburger-btn').addEventListener('click', function() {
-  document.querySelector('.nav-pages').classList.toggle('active');
-});
-
+console.log(links);
 {
   const ctx = document.getElementById('myChart').getContext('2d');
 
