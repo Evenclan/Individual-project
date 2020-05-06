@@ -1,0 +1,120 @@
+/* Overall rules */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  padding: 30px;
+  display: none;
+}
+
+.overlay::webkit-scrollbar {
+  display: none;
+}
+
+.overlay.show {
+  display: flex;
+}
+
+.modal {
+  max-width: 800px;
+  margin: auto;
+  background-color: #ffffff;
+  position: relative;
+  display: none;
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.modal-container {
+  min-width: 700px;
+
+}
+
+.title.modal-title {
+  font-size: 1rem;
+  text-transform: none;
+  padding: 15px;
+}
+
+/* Login-in Modal */
+
+.modal-form {
+  display: flex;
+  padding: 35px;
+}
+
+.modal-form-field {
+  padding: 10px 12px;
+}
+
+.modal-form-field input {
+  border-radius: 3px;
+  padding: 12px 0 12px 18px;
+  border: 1px solid $nav-main-color;
+  font-size: 0.95rem;
+}
+
+/* Quit modal */
+
+.row.modal-row-right {
+  justify-content: flex-end;
+}
+
+/* Chat */
+
+#chat-modal {
+  min-width: 600px;
+}
+
+.row.modal-row-left {
+  justify-content: flex-start;
+  border-bottom: solid $nav-main-color 1px;
+}
+
+.msg1 {
+  width: 55%;
+}
+
+.msg3 {
+  width: 35%;
+}
+
+.msg {
+  padding: 10px;
+  margin: 12px 0 12px 4px;
+  border-radius: 4px;
+}
+
+.question {
+  background-color: #eee;
+}
+
+.response {
+  background-color: #929292;
+}
+
+.chat-field {
+  width: 80%;
+}
+
+#modal-chat {
+  width: 100%;
+}

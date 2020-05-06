@@ -19,6 +19,10 @@
   margin: 2px;
   &:hover {
     background-color: #F69332;
+    cursor: pointer;
+  }
+  &.cancel {
+    background-color: grey;
   }
 }
 

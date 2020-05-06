@@ -13,6 +13,96 @@
 </head>
 
 <body>
+
+
+  <!-- Overlay modal -->
+  <div class="overlay" id="overlay">
+    <!-- Quit modal -->
+    <div class="modal" id="quit-modal">
+      <div class="modal-container">
+        <div class="title modal-title">
+          Do you really want to Quit?
+        </div>
+        <div class="row modal-row-right">
+          <button class="brand-button cancel">Cancel</button>
+
+          <button class="brand-button">Quit</button>
+        </div>
+      </div>
+    </div>
+    <!-- Quit modal ends here -->
+
+    <!-- chat modal -->
+
+    <div class="modal" id="chat-modal">
+      <div class="modal-container">
+        <div class="title modal-title">
+          Online chat with your personal menager
+        </div>
+        <div class="row modal-row-left">
+          <div class="menager-list">
+            <div class="online-dot"></div>
+            <img class="menager-img" src="https://i.imgur.com/XvP4JNy.jpg" />
+            <span class="menager-name">Filip</span>
+          </div>
+        </div>
+
+        <div class="row modal-row-left">
+          <div class="modal-chat">
+
+            <div class="msg1 msg question">Hello. Can i help you?</div>
+
+            <div class="msg response">Hello! I would like to know about Postback.</div>
+
+            <div class="msg3 msg question">Ok. 5 min...</div>
+          </div>
+        </div>
+
+        <div class="row modal-row-left">
+          <div class="modal-form-field chat-field">
+            <label for="name"></label>
+            <input style="font-family: FontAwesome;" type="text" name="name" id="modal-chat"
+              placeholder="&#xf075 Enter the message" />
+          </div>
+
+          <div class="brand-button">Send</div>
+        </div>
+
+      </div>
+
+
+    </div>
+
+    <!-- Message modal ends here -->
+
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+      <div class="modal-container">
+        <div class="title">
+          Login
+        </div>
+        <div class="modal-form">
+          <div class="modal-form-field">
+            <label for="name"></label>
+            <input style="font-family: FontAwesome;" type="text" name="name" id="modal-name"
+              placeholder="&#xf007 Login name" />
+          </div>
+          <div class="modal-form-field">
+            <label for="name"></label>
+            <input style="font-family: FontAwesome;" type="text" name="name" id="modal-password"
+              placeholder="&#xf084 password" />
+          </div>
+          <div class="modal-form-field">
+            <button class="brand-button">Enter</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Login Modal ends here -->
+  </div>
+
+  <!-- Overlay div ends here -->
+
   <nav class="side-nav">
     <div class="logo">
       <span class="main-logo">Just do it</span>
@@ -58,10 +148,10 @@
       </ul>
       <div class="chat">
         <h3>YOUR MENAGER</h3>
-        <div class="menager-list">
+        <div class="menager-list menager-modal">
           <div class="online-dot"></div>
-          <img src="https://i.imgur.com/XvP4JNy.jpg" />
-          <span class="menager-name">Filip</span>
+          <img class="menager-img" src="https://i.imgur.com/XvP4JNy.jpg" />
+          <span class="menager-name">Filip T.</span>
         </div>
       </div>
     </div>
