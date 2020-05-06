@@ -1,13 +1,3 @@
-const select = {
-  menu: {
-    navLinks: '.nav-pages',
-  }
-
-};
-
-const links = document.querySelectorAll(select.menu.navLinks);
-
-console.log(links);
 {
   const ctx = document.getElementById('myChart').getContext('2d');
 
