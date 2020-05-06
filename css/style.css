@@ -840,6 +840,9 @@ a {
   display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  font-size: 10px;
 }
 
 .container {
