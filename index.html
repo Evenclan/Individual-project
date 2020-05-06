@@ -2,14 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b39af8bd7f.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="vendor/css/Glyphter.css" />
-  <link rel="stylesheet" type="text/css" href="../css/style.css" />
+  <link rel="stylesheet" href="vendor/css/Glyphter.css">
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 
 <body>
@@ -24,9 +24,9 @@
           Do you really want to Quit?
         </div>
         <div class="row modal-row-right">
-          <button class="brand-button cancel">Cancel</button>
+          <button type="submit" class="brand-button cancel">Cancel</button>
 
-          <button class="brand-button">Quit</button>
+          <button type="submit" class="brand-button">Quit</button>
         </div>
       </div>
     </div>
@@ -42,7 +42,7 @@
         <div class="row modal-row-left">
           <div class="menager-list">
             <div class="online-dot"></div>
-            <img class="menager-img" src="https://i.imgur.com/XvP4JNy.jpg" />
+            <img class="menager-img" src="https://i.imgur.com/XvP4JNy.jpg" alt="menager picture">
             <span class="menager-name">Filip</span>
           </div>
         </div>
@@ -62,10 +62,10 @@
           <div class="modal-form-field chat-field">
             <label for="name"></label>
             <input style="font-family: FontAwesome;" type="text" name="name" id="modal-chat"
-              placeholder="&#xf075 Enter the message" />
+              placeholder="&#xf075 Enter the message">
           </div>
 
-          <div class="brand-button">Send</div>
+          <div type="submit" class="brand-button">Send</div>
         </div>
 
       </div>
@@ -85,15 +85,15 @@
           <div class="modal-form-field">
             <label for="name"></label>
             <input style="font-family: FontAwesome;" type="text" name="name" id="modal-name"
-              placeholder="&#xf007 Login name" />
+              placeholder="&#xf007 Login name">
           </div>
           <div class="modal-form-field">
             <label for="name"></label>
             <input style="font-family: FontAwesome;" type="text" name="name" id="modal-password"
-              placeholder="&#xf084 password" />
+              placeholder="&#xf084 password">
           </div>
           <div class="modal-form-field">
-            <button class="brand-button">Enter</button>
+            <button type="submit" class="brand-button">Enter</button>
           </div>
         </div>
       </div>
@@ -110,47 +110,33 @@
     </div>
     <div class="nav-pages">
       <ul class="nav-links">
-        <a href="#general">
-          <li class="nav-link">
+          <li href="#general" class="nav-link">
             <i class="icon-aside icon-general"></i>General
           </li>
-        </a>
-        <a href="#details">
-          <li class="nav-link">
+          <li href="#details" class="nav-link">
             <i class="icon-aside icon-details"></i>Details
           </li>
-        </a>
-        <a href="#links">
-          <li class="nav-link">
+          <li href="#links" class="nav-link">
             <i class="icon-aside icon-links"></i>Links
           </li>
-        </a>
-        <a href="#banners">
-          <li class="nav-link">
+          <li href="#banners" class="nav-link">
             <i class="icon-aside icon-banners"></i>Banners
           </li>
-        </a>
-        <a href="#personal-data">
-          <li class="nav-link">
+          <li href="#personal-data" class="nav-link">
             <i class="icon-aside icon-personaldata"></i>Personal data
           </li>
-        </a>
-        <a href="#payout">
-          <li class="nav-link">
+          <li href="#payout" class="nav-link">
             <i class="icon-aside icon-payout"></i>Payout
           </li>
-        </a>
-        <a href="#postback">
-          <li class="nav-link">
+          <li href="#postback" class="nav-link">
             <i class="icon-aside icon-postback"></i>Postback
           </li>
-        </a>
       </ul>
       <div class="chat">
         <h3>YOUR MENAGER</h3>
         <div class="menager-list menager-modal">
           <div class="online-dot"></div>
-          <img class="menager-img" src="https://i.imgur.com/XvP4JNy.jpg" />
+          <img class="menager-img" src="https://i.imgur.com/XvP4JNy.jpg" alt="menager photo">
           <span class="menager-name">Filip T.</span>
         </div>
       </div>
@@ -170,7 +156,7 @@
       </a>
     </div>
     <div class="icon-wrapper notification">
-      <a href="#">
+      <a aria-label="none" href="#">
         <span class="notification-icon"><i class="icon icon-notification"></i>
         </span>
         <div class="notification-dot"></div>
@@ -182,7 +168,7 @@
         Leonardo Dicaprio</a>
     </div>
     <div class="icon-wrapper exit">
-      <a href="#">
+      <a aria-label="none" href="#">
         <span class="exit-icon">
           <i class="icon icon-quit"></i>
         </span>
@@ -197,10 +183,10 @@
       </div>
       <div class="row dates">
         <div class="calender">
-          <input type="text" class="start-date" name="start-date" placeholder="16.05.2016" />
-          <input type="text" class="end-date" name="end-date" placeholder="16.05.2016" />
+          <input type="text" class="start-date" name="start-date" placeholder="16.05.2016">
+          <input type="text" class="end-date" name="end-date" placeholder="16.05.2016">
         </div>
-        <button class="calender-refresh-button">
+        <button type="submit" class="calender-refresh-button">
           <i class="icon icon-refresh"></i>
         </button>
       </div>
@@ -220,13 +206,13 @@
         Earning chart
       </div>
       <div class="row chart">
-        <button class="btn btn-signups btn-active">
+        <button type="submit" class="btn btn-signups btn-active">
           <i class="fas fa-circle i-signups"></i> Signups
         </button>
-        <button class="btn btn-ftd btn-active">
+        <button type="submit" class="btn btn-ftd btn-active">
           <i class="fas fa-circle i-ftd"></i> FTD
         </button>
-        <button class="btn btn-earned">
+        <button type="submit" class="btn btn-earned">
           <i class="fas fa-circle i-earned"></i> Earned
         </button>
       </div>
@@ -276,13 +262,14 @@
       </div>
 
       <div class="row">
-        <button class="brand-button">
+        <button type="submit" class="brand-button">
           + add new
         </button>
       </div>
 
       <div class="row">
         <table>
+          <tbody>
           <tr>
             <td>Home page</td>
             <td><a class="table-link" href="#">http://homepage.com</a></td>
@@ -353,11 +340,12 @@
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
+        </tbody>
         </table>
       </div>
 
       <div class="row">
-        <button class="brand-button">
+        <button type="submit" class="brand-button">
           + add new
         </button>
       </div>
@@ -370,13 +358,14 @@
         Banners
       </div>
       <div class="row">
-        <button class="brand-button">
+        <button type="submit" class="brand-button">
           + add new
         </button>
       </div>
 
       <div class="row">
         <table>
+          <tbody>
           <tr>
             <td>Banner main</td>
             <td>
@@ -431,10 +420,11 @@
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
+        </tbody>
         </table>
       </div>
       <div class="row">
-        <button class="brand-button">
+        <button type="submit" class="brand-button">
           + add new
         </button>
       </div>
@@ -448,67 +438,58 @@
       </div>
 
       <div class="row">
-        <form action="" method="get" class="form-personal">
           <div class="form-field">
             <label for="name">Name</label>
-            <input type="text" name="name" id="name" required />
+            <input type="text" name="name" id="name" required>
           </div>
           <div class="form-field">
             <label for="surname">Surname</label>
-            <input type="text" name="surname" id="surname" required />
+            <input type="text" name="surname" id="surname" required>
           </div>
           <div class="form-field">
             <label for="surname">E-mail</label>
-            <input type="text" name="email" id="email" required />
+            <input type="text" name="email" id="email" required>
           </div>
           <div class="form-field">
             <label for="surname">Phone number</label>
-            <input type="text" name="number" id="number" required />
+            <input type="text" name="number" id="number" required>
           </div>
-        </form>
       </div>
 
       <div class="row">
-        <form action="" method="get" class="form-personal">
           <div class="form-field">
             <label for="skype">Skype</label>
-            <input type="text" name="Skype" id="Skype" />
+            <input type="text" name="Skype" id="Skype">
           </div>
           <div class="form-field">
             <label for="icq">ICQ</label>
-            <input type="text" name="icq" id="ICQ" />
+            <input type="text" name="icq" id="ICQ">
           </div>
           <div class="form-field">
             <label for="msn">MSN</label>
-            <input type="text" name="msn" id="MSN" />
+            <input type="text" name="msn" id="MSN">
           </div>
-        </form>
       </div>
 
       <div class="row">
-        <form action="" method="get" class="form-personal">
           <div class="form-field">
             <label for="wallet">Wallet</label>
-            <input type="text" name="wallet" id="wallet" />
+            <input type="text" name="wallet" id="wallet">
           </div>
-
-        </form>
       </div>
       <div class="row">
-        <form action="" method="get" class="form-personal">
           <div class="form-field">
             <label for="password">Password</label>
-            <input type="text" name="password" id="password" />
+            <input type="text" name="password" id="password">
           </div>
 
           <div class="form-field">
             <label for="repeat">Repeat</label>
-            <input type="text" name="repeat" id="repeat" />
+            <input type="text" name="repeat" id="repeat">
           </div>
-        </form>
       </div>
       <div class="row">
-        <button class="brand-button">Save</button>
+        <button type="submit" class="brand-button">Save</button>
       </div>
     </section>
   </div>

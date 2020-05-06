@@ -738,6 +738,7 @@ a {
   color: #F5F5F2;
   background: #292929;
   border-left: solid #F58220 5px;
+  cursor: pointer;
 }
 
 .chat {
