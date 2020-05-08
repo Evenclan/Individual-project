@@ -1,0 +1,31 @@
+.detail-table {
+    overflow-x: auto;
+}
+
+th {
+    padding: 10px;
+    &:hover {
+        background-color: $nav-hover-color;
+    }
+}
+
+.table-nav {
+  align-items: center;
+}
+
+.table-nav a {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  text-align: center;
+  color: #8DBEC8;
+  &:hover {
+    background-color: $nav-hover-color;
+  }
+  &:first-child {
+    margin-left: 20px;
+  }
+  &:last-child {
+    margin-right: 20px;
+  }
+}

@@ -1,11 +1,11 @@
 table {
-  width: 70%;
+  width: 85%;
   border-collapse: collapse;
-  font-weight: 600;
+  font-weight: 400;
   color: $nav-main-color;
 }
 
-table tr {
+.link-table {
   border-bottom: 1px solid $nav-main-color;
   &:hover {
     background-color: $nav-hover-color;

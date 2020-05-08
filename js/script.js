@@ -41,8 +41,6 @@ document.querySelector('.menager-modal').addEventListener('click', function() {
   openModal('#chat-modal');
 });
 
-// openModal('#chat-modal');
-
 {
   const ctx = document.getElementById('myChart').getContext('2d');
 

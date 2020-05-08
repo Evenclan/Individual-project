@@ -35,7 +35,7 @@
     <!-- chat modal -->
 
     <div class="modal" id="chat-modal">
-      <div class="modal-container">
+      <div class="modal-container-chat">
         <div class="title modal-title">
           Online chat with your personal menager
         </div>
@@ -47,7 +47,7 @@
           </div>
         </div>
 
-        <div class="row modal-row-left">
+        <div class="row modal-row-left chat-box">
           <div class="modal-chat">
 
             <div class="msg1 msg question">Hello. Can i help you?</div>
@@ -227,31 +227,104 @@
       <div class="title">
         Details
       </div>
-      <div class="row">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo
-        cum qui eveniet blanditiis eius suscipit fugit, molestiae provident
-        ipsa, nobis inventore est voluptatem labore animi dolorem doloribus
-        sequi repudiandae rem dignissimos dicta eos! Veniam impedit maiores
-        beatae cum obcaecati qui assumenda quaerat ipsum corrupti esse,
-        corporis veritatis quos ea! Dolorum, fugiat. Eveniet corrupti non,
-        quis dolores commodi officiis aliquam. Temporibus quibusdam odit
-        consequatur accusamus tenetur. Laborum possimus dicta nisi, tempora
-        assumenda tempore voluptatum tenetur hic fugit. Assumenda unde
-        temporibus laboriosam magnam minus a accusantium nesciunt quasi odit
-        natus sit, placeat optio quis tempora, non voluptatem ipsum doloremque
-        quae eos, adipisci at similique maxime? At suscipit quidem
-        perspiciatis numquam, odio, natus officiis quas culpa eum rem neque,
-        fugiat facere nisi minima quis necessitatibus enim doloremque quam
-        molestiae! Voluptatum natus cum officia unde non cumque, illo
-        temporibus labore facere repudiandae, reiciendis voluptas sit nesciunt
-        nostrum totam velit molestiae sunt nihil tempore deleniti, atque
-        culpa. Corporis neque amet odio rem quas beatae, similique quos,
-        itaque quaerat quae cum debitis porro! Quidem cum, alias quas
-        repudiandae sapiente facere assumenda, similique adipisci ratione
-        exercitationem, aliquid ut. Beatae provident ipsum aspernatur eveniet
-        dignissimos voluptates minima voluptatem, quos quaerat facilis harum
-        sint quam quis facere modi reprehenderit ducimus consequatur vero! Sed
+      <div class="row dates">
+
+        <div class="calender">
+          <input type="text" class="start-date" name="start-date" placeholder="16.05.2016">
+          <input type="text" class="end-date" name="end-date" placeholder="16.05.2016">
+        </div>
+
+        <button type="submit" class="calender-refresh-button">
+          <i class="icon icon-refresh"></i>
+        </button>
       </div>
+
+      <div class="row">
+        <table>
+          <thead>
+            <tr class="link-table">
+              <th>Date</th>
+              <th>Amount ($)</th>
+              <th>Deal</th>
+              <th>Account</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="link-table">
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr class="link-table">
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr class="link-table">
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr class="link-table">
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr class="link-table">
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr class="link-table">
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr class="link-table">
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+
+            <tr class="link-table">
+              <td>17/08/02 (12:58)</td>
+              <td>34,425.00</td>
+              <td>cpl (200)</td>
+              <td>bank</td>
+            </tr>
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="row table-nav">
+        <i class="icon-arrow-left"></i>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <i class="icon-arrow-right"></i>
+      </div>
+
     </section>
   </div>
 
@@ -270,70 +343,70 @@
       <div class="row">
         <table>
           <tbody>
-          <tr>
+          <tr class="link-table">
             <td>Home page</td>
             <td><a class="table-link" href="#">http://homepage.com</a></td>
             <td class="table-icons">
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Currently offer</td>
             <td><a class="table-link" href="#">http://currenty.com</a></td>
             <td class="table-icons">
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Blurpix</td>
             <td><a class="table-link" href="#">http://blurpix.com</a></td>
             <td class="table-icons">
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Your Site</td>
             <td><a class="table-link" href="#">http://yoursite.com</a></td>
             <td class="table-icons">
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Google</td>
             <td><a class="table-link" href="#">http://google.com</a></td>
             <td class="table-icons">
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Facebook</td>
             <td><a class="table-link" href="#">http://facebook.com</a></td>
             <td class="table-icons">
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Dashboard</td>
             <td><a class="table-link" href="#">http://dashboard.com</a></td>
             <td class="table-icons">
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Blurax</td>
             <td><a class="table-link" href="#">http://blurax.com</a></td>
             <td class="table-icons">
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Piece of Wine</td>
             <td><a class="table-link" href="#">http://pieceofwine.com</a></td>
             <td class="table-icons">
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Twitter</td>
             <td><a class="table-link" href="#">http://twitter.com</a></td>
             <td class="table-icons">
@@ -366,7 +439,7 @@
       <div class="row">
         <table>
           <tbody>
-          <tr>
+          <tr class="link-table">
             <td>Banner main</td>
             <td>
               <a class="table-link" href="#">http://website.com/bannermain.gif</a>
@@ -375,7 +448,7 @@
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Sign up banner</td>
             <td>
               <a class="table-link" href="#">http://website.com/signup.gif</a>
@@ -384,7 +457,7 @@
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Banner left side</td>
             <td>
               <a class="table-link" href="#">http://website.com/leftside.gif</a>
@@ -393,7 +466,7 @@
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Vertical banner</td>
             <td>
               <a class="table-link" href="#">http://website.com/vert.gif</a>
@@ -402,7 +475,7 @@
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Front banner</td>
             <td>
               <a class="table-link" href="#">http://website.com/front.gif</a>
@@ -411,7 +484,7 @@
               <i class="fas fa-link"></i> <i class="fas fa-trash-alt"></i>
             </td>
           </tr>
-          <tr>
+          <tr class="link-table">
             <td>Horizontal banner</td>
             <td>
               <a class="table-link" href="#">http://website.com/horizontal.gif</a>
@@ -431,66 +504,86 @@
     </section>
   </div>
 
-  <div class="container active">
+  <div class="container">
     <section id="personal-data">
       <div class="title">
         Personal Data
       </div>
 
       <div class="row">
-          <div class="form-field">
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" required>
-          </div>
-          <div class="form-field">
-            <label for="surname">Surname</label>
-            <input type="text" name="surname" id="surname" required>
-          </div>
-          <div class="form-field">
-            <label for="surname">E-mail</label>
-            <input type="text" name="email" id="email" required>
-          </div>
-          <div class="form-field">
-            <label for="surname">Phone number</label>
-            <input type="text" name="number" id="number" required>
-          </div>
+        <form>
+        <div class="form-field">
+
+          <label for="name">Name</label>
+          <input type="text" name="name" id="name" required>
+        </div>
+
+        <div class="form-field">
+          <label for="name">Surname</label>
+          <input type="text" name="name" id="surname" required>
+        </div>
+
+        <div class="form-field">
+          <label for="name">E-mail</label>
+          <input type="text" name="name" id="email" required>
+        </div>
+
+        <div class="form-field">
+          <label for="name">Phone number</label>
+          <input type="text" name="name" id="number" required>
+        </div>
+        </form>
       </div>
 
       <div class="row">
-          <div class="form-field">
-            <label for="skype">Skype</label>
-            <input type="text" name="Skype" id="Skype">
-          </div>
-          <div class="form-field">
-            <label for="icq">ICQ</label>
-            <input type="text" name="icq" id="ICQ">
-          </div>
-          <div class="form-field">
-            <label for="msn">MSN</label>
-            <input type="text" name="msn" id="MSN">
-          </div>
+        <form>
+        <div class="form-field">
+
+          <label for="name">Skype</label>
+          <input type="text" name="name" id="Skype">
+        </div>
+
+        <div class="form-field">
+          <label for="name">ICQ</label>
+          <input type="text" name="name" id="ICQ">
+        </div>
+
+        <div class="form-field">
+          <label for="name">MSN</label>
+          <input type="text" name="name" id="MSN">
+        </div>
+        </form>
       </div>
 
       <div class="row">
-          <div class="form-field">
-            <label for="wallet">Wallet</label>
-            <input type="text" name="wallet" id="wallet">
-          </div>
+        <form>
+        <div class="form-field">
+          <label for="name">Wallet</label>
+          <input type="text" name="name" id="Wallet" required>
+        </div>
+        </form>
       </div>
-      <div class="row">
-          <div class="form-field">
-            <label for="password">Password</label>
-            <input type="text" name="password" id="password">
-          </div>
 
-          <div class="form-field">
-            <label for="repeat">Repeat</label>
-            <input type="text" name="repeat" id="repeat">
-          </div>
+
+      <div class="row">
+        <form>
+        <div class="form-field">
+
+          <label for="name">Password</label>
+          <input type="text" name="name" id="Password" required>
+        </div>
+
+        <div class="form-field">
+          <label for="name">Repeat</label>
+          <input type="text" name="name" id="Repeat" required>
+        </div>
+        </form>
       </div>
+
       <div class="row">
         <button type="submit" class="brand-button">Save</button>
       </div>
+
     </section>
   </div>
 
@@ -499,66 +592,134 @@
       <div class="title">
         Payout
       </div>
-      <div class="row">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo
-        cum qui eveniet blanditiis eius suscipit fugit, molestiae provident
-        ipsa, nobis inventore est voluptatem labore animi dolorem doloribus
-        sequi repudiandae rem dignissimos dicta eos! Veniam impedit maiores
-        beatae cum obcaecati qui assumenda quaerat ipsum corrupti esse,
-        corporis veritatis quos ea! Dolorum, fugiat. Eveniet corrupti non,
-        quis dolores commodi officiis aliquam. Temporibus quibusdam odit
-        consequatur accusamus tenetur. Laborum possimus dicta nisi, tempora
-        assumenda tempore voluptatum tenetur hic fugit. Assumenda unde
-        temporibus laboriosam magnam minus a accusantium nesciunt quasi odit
-        natus sit, placeat optio quis tempora, non voluptatem ipsum doloremque
-        quae eos, adipisci at similique maxime? At suscipit quidem
-        perspiciatis numquam, odio, natus officiis quas culpa eum rem neque,
-        fugiat facere nisi minima quis necessitatibus enim doloremque quam
-        molestiae! Voluptatum natus cum officia unde non cumque, illo
-        temporibus labore facere repudiandae, reiciendis voluptas sit nesciunt
-        nostrum totam velit molestiae sunt nihil tempore deleniti, atque
-        culpa. Corporis neque amet odio rem quas beatae, similique quos,
-        itaque quaerat quae cum debitis porro! Quidem cum, alias quas
-        repudiandae sapiente facere assumenda, similique adipisci ratione
-        exercitationem, aliquid ut. Beatae provident ipsum aspernatur eveniet
-        dignissimos voluptates minima voluptatem, quos quaerat facilis harum
-        sint quam quis facere modi reprehenderit ducimus consequatur vero! Sed
+
+      <div class="row dates">
+
+        <div class="calender">
+          <input type="text" class="start-date" name="start-date" placeholder="16.05.2016">
+          <input type="text" class="end-date" name="end-date" placeholder="16.05.2016">
+        </div>
+
+        <button type="submit" class="calender-refresh-button">
+          <i class="icon icon-refresh"></i>
+        </button>
+      </div>
+
+      <div class="row detail-table">
+
+        <table>
+
+          <thead>
+            <tr>
+              <th>Tracker name</th>
+              <th>Initiated date</th>
+              <th>Visits</th>
+              <th>Unique</th>
+              <th>Signups</th>
+              <th>FTD</th>
+              <th>Depositors</th>
+              <th>Deposits ($)</th>
+              <th>Payout ($) </th>
+              <th>Turnover</th>
+              <th>Deal</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr class="link-table">
+              <td>aff/sam_test</td>
+              <td>17/08/02 (12:58)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34.425.00</td>
+              <td>234.00</td>
+              <td>421,342.00</td>
+              <td>cpl (200)</td>
+            </tr>
+
+            <tr class="link-table">
+              <td>aff/sam_test</td>
+              <td>17/08/02 (12:58)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34.425.00</td>
+              <td>234.00</td>
+              <td>421,342.00</td>
+              <td>cpl (200)</td>
+            </tr>
+
+            <tr class="link-table">
+              <td>aff/sam_test</td>
+              <td>17/08/02 (12:58)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34.425.00</td>
+              <td>234.00</td>
+              <td>421,342.00</td>
+              <td>cpl (200)</td>
+            </tr>
+
+            <tr class="link-table">
+              <td>aff/sam_test</td>
+              <td>17/08/02 (12:58)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34.425.00</td>
+              <td>234.00</td>
+              <td>421,342.00</td>
+              <td>cpl (200)</td>
+            </tr>
+
+            <tr class="link-table">
+              <td>aff/sam_test</td>
+              <td>17/08/02 (12:58)</td>
+              <td>232</td>
+              <td>114</td>
+              <td>12</td>
+              <td>6</td>
+              <td>3</td>
+              <td>34.425.00</td>
+              <td>234.00</td>
+              <td>421,342.00</td>
+              <td>cpl (200)</td>
+            </tr>
+          </tbody>
+
+
+
+
+        </table>
+
+      </div>
+
+      <div class="row table-nav">
+        <i class="icon-arrow-left"></i>
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#">7</a>
+        <a href="#">8</a>
+        <a href="#">9</a>
+        <i class="icon-arrow-right"></i>
       </div>
     </section>
   </div>
 
-  <div class="container active">
-    <section id="postback">
-      <div class="title">
-        Postback
-      </div>
-      <div class="row">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora quo
-        cum qui eveniet blanditiis eius suscipit fugit, molestiae provident
-        ipsa, nobis inventore est voluptatem labore animi dolorem doloribus
-        sequi repudiandae rem dignissimos dicta eos! Veniam impedit maiores
-        beatae cum obcaecati qui assumenda quaerat ipsum corrupti esse,
-        corporis veritatis quos ea! Dolorum, fugiat. Eveniet corrupti non,
-        quis dolores commodi officiis aliquam. Temporibus quibusdam odit
-        consequatur accusamus tenetur. Laborum possimus dicta nisi, tempora
-        assumenda tempore voluptatum tenetur hic fugit. Assumenda unde
-        temporibus laboriosam magnam minus a accusantium nesciunt quasi odit
-        natus sit, placeat optio quis tempora, non voluptatem ipsum doloremque
-        quae eos, adipisci at similique maxime? At suscipit quidem
-        perspiciatis numquam, odio, natus officiis quas culpa eum rem neque,
-        fugiat facere nisi minima quis necessitatibus enim doloremque quam
-        molestiae! Voluptatum natus cum officia unde non cumque, illo
-        temporibus labore facere repudiandae, reiciendis voluptas sit nesciunt
-        nostrum totam velit molestiae sunt nihil tempore deleniti, atque
-        culpa. Corporis neque amet odio rem quas beatae, similique quos,
-        itaque quaerat quae cum debitis porro! Quidem cum, alias quas
-        repudiandae sapiente facere assumenda, similique adipisci ratione
-        exercitationem, aliquid ut. Beatae provident ipsum aspernatur eveniet
-        dignissimos voluptates minima voluptatem, quos quaerat facilis harum
-        sint quam quis facere modi reprehenderit ducimus consequatur vero! Sed
-      </div>
-    </section>
-  </div>
   <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
   <script src="js/script.js"></script>
