@@ -358,9 +358,12 @@ body {
 }
 
 .top-nav {
-  align-items: baseline;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
   background-color: #fff;
   height: 50px;
   top: 0;
@@ -372,8 +375,10 @@ body {
 }
 
 .container {
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -ms-flex-direction: column;
+      flex-direction: column;
   background-color: #fff;
   width: calc(100% - 270px);
   margin: 10px;
@@ -382,12 +387,23 @@ body {
   top: 60px;
 }
 
+.hidden {
+  transform: translateX(-100%);
+  z-index: 5;
+}
+
+.full-size {
+  width: calc(100% - 20px);
+  left: 0;
+}
+
 @media (max-width: 750px) {
   .icon-wrapper {
     display: none;
   }
   .form-field {
-    flex-direction: column;
+    -ms-flex-direction: column;
+        flex-direction: column;
     width: 200px;
   }
   .form-field input {
@@ -398,17 +414,24 @@ body {
     margin-bottom: 5px;
   }
   .side-nav {
-    animation: fadeIn ease 0.4s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
+    left: -400px;
+    opacity: 0;
+  }
+  .show {
+    animation: none;
+    left: 0;
+    z-index: 6;
+    opacity: 1;
   }
   .top-nav {
-    animation: fullWidth ease 0.4s;
+    animation: fullWidth ease 0.01s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     width: 100%;
-    justify-content: flex-start;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
     background: #181818;
+    border-bottom: none;
   }
   .top-nav .logo-top-nav {
     display: block;
@@ -418,6 +441,7 @@ body {
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     width: calc(100% - 20px);
+    z-index: 3;
   }
   @keyframes fadeIn {
     0% {
@@ -474,8 +498,10 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  justify-content: center;
-  align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
   overflow: auto;
   padding: 30px;
   display: none;
@@ -486,6 +512,7 @@ body {
 }
 
 .overlay.show {
+  display: -ms-flexbox;
   display: flex;
 }
 
@@ -528,6 +555,7 @@ body {
 
 /* Login-in Modal */
 .modal-form {
+  display: -ms-flexbox;
   display: flex;
   padding: 35px;
 }
@@ -546,7 +574,8 @@ body {
 
 /* Quit modal */
 .row.modal-row-right {
-  justify-content: flex-end;
+  -ms-flex-pack: end;
+      justify-content: flex-end;
 }
 
 /* Chat */
@@ -555,7 +584,8 @@ body {
 }
 
 .row.modal-row-left {
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   border-bottom: solid #979797 1px;
 }
 
@@ -717,7 +747,8 @@ a {
 
 .nav-links {
   list-style-type: none;
-  padding-inline-start: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
   border-bottom: solid 1px #979797;
 }
 
@@ -753,8 +784,10 @@ a {
 }
 
 .menager-list {
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
   position: relative;
 }
 
@@ -816,8 +849,10 @@ a {
 
 .title {
   text-transform: uppercase;
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   padding: 10px;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: solid #979797 1px;
   color: #979797;
@@ -826,8 +861,10 @@ a {
 
 .row {
   padding: 20px;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
 }
 
 .container {
@@ -854,7 +891,8 @@ a {
 }
 
 .amount {
-  justify-content: center;
+  -ms-flex-pack: center;
+      justify-content: center;
   text-align: left;
 }
 
@@ -862,8 +900,10 @@ a {
   border-bottom: solid grey 1px;
   padding: 5px;
   width: 35%;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   color: #979797;
   font-size: 16px;
 }
@@ -884,7 +924,8 @@ a {
 }
 
 .chart-title {
-  justify-content: flex-start;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
   color: #979797;
   font-size: 16px;
   font-weight: 800;
@@ -938,9 +979,12 @@ td {
   margin: 10px auto;
   color: #979797;
   font-weight: 600;
-  align-items: baseline;
+  -ms-flex-align: baseline;
+      align-items: baseline;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   width: 400px;
 }
 
@@ -954,6 +998,7 @@ td {
 
 .detail-table {
   overflow-x: auto;
+  display: block;
 }
 
 th {
@@ -965,7 +1010,8 @@ th:hover {
 }
 
 .table-nav {
-  align-items: center;
+  -ms-flex-align: center;
+      align-items: center;
 }
 
 .table-nav a {
@@ -987,5 +1033,4 @@ th:hover {
 .table-nav a:last-child {
   margin-right: 20px;
 }
-
 /*# sourceMappingURL=style.css.map */

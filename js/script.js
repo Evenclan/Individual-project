@@ -1,3 +1,54 @@
+function toggleMenu(visible) {
+  document.querySelector('.side-nav').classList.toggle('show', visible);
+}
+
+const menuButton = document.querySelector('.hamburger-btn-top');
+menuButton.classList.remove('active');
+
+document.querySelector('.hamburger-btn-top').addEventListener('click', function(e) {
+  e.preventDefault();
+  toggleMenu();
+});
+
+// const menuToggle = document.querySelector('.side-nav');
+// const hamburgerBtnTop = document.querySelector('.hamburger-btn-side');
+// const container = document.querySelector('.container');
+// const topNav = document.querySelector('.top-nav');
+// const allPages = document.querySelectorAll('.nav-links li');
+
+// console.log(menuToggle);
+
+// hamburgerBtnTop.addEventListener('click', function () {
+//   menuToggle.classList.toggle('hidden');
+//   container.classList.toggle('full-size');
+//   topNav.classList.toggle('full-size');
+//   console.log('lol');
+// });
+
+// function activatePage(event) {
+//   event.preventDefault();
+//   const clickedElement = this;
+
+//   for (let activePage of allPages) {
+//     if (clickedElement !== activePage) activePage.classList.remove('active');
+//   }
+
+//   clickedElement.classList.add('active');
+
+//   console.log(allPages);
+// }
+
+
+
+
+
+
+
+
+
+
+
+
 function closeModal() {
   document.getElementById('overlay').classList.remove('show');
 }
@@ -29,15 +80,15 @@ function openModal(modal) {
   document.querySelector(modal).classList.add('show');
 }
 
-document.querySelector('.exit').addEventListener('click', function() {
+document.querySelector('.exit').addEventListener('click', function () {
   openModal('#quit-modal');
 });
 
-document.querySelector('.account').addEventListener('click', function() {
+document.querySelector('.account').addEventListener('click', function () {
   openModal('#login-modal');
 });
 
-document.querySelector('.menager-modal').addEventListener('click', function() {
+document.querySelector('.menager-modal').addEventListener('click', function () {
   openModal('#chat-modal');
 });
 
