@@ -31,11 +31,13 @@
   margin-right: 60px;
 }
 
-.start-date, .end-date {
+.start-date,
+.end-date {
   height: 20px;
   padding: 5px 0 5px 20px;
   width: 120px;
   border: none;
+
   &:first-child {
     border-right: solid $nav-main-color 1px;
   }
@@ -54,8 +56,8 @@
   border: solid $nav-main-color 1px;
   border-radius: 3px;
   padding: 10px;
+
   &:hover {
     border: solid $nav-main-background 1px;
   }
 }
-

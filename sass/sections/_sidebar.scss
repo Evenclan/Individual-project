@@ -10,6 +10,7 @@
   margin-left: 40px;
   cursor: pointer;
   color: $nav-main-color;
+
   &:hover {
     color: $brand-main-color;
   }
@@ -22,52 +23,54 @@
 }
 
 .nav-link {
-    padding: 12px;
-    margin: 5px 0;
-    position: relative;
-    border-left: solid $nav-main-background 5px;
-    &:hover {
-      color: $nav-hover-color;
-      background: $nav-hover-background;
-      border-left: solid $brand-main-color 5px;
-      cursor: pointer;
-    }
-  }
+  padding: 12px;
+  margin: 5px 0;
+  position: relative;
+  border-left: solid $nav-main-background 5px;
 
-  .chat {
-    padding-left: 20px;
+  &:hover {
+    color: $nav-hover-color;
+    background: $nav-hover-background;
+    border-left: solid $brand-main-color 5px;
+    cursor: pointer;
   }
+}
 
-  .menager-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-    display: inline-block;
-  }
+.chat {
+  padding-left: 20px;
+}
 
-  .menager-name {
-    margin-left: 10px;
-    font-size: 20px;
-  }
+.menager-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+}
 
-  .menager-list {
-    display: flex;
-    align-items: center;
-    position: relative;
-    &:hover {
-      color: $brand-main-color;
-      cursor: pointer;
-    }
-  }
+.menager-name {
+  margin-left: 10px;
+  font-size: 20px;
+}
 
-  .online-dot {
-    z-index: 2;
-    border-radius: 50%;
-    width: 13px;
-    height: 12px;
-    left: 36px;
-    top: 0;
-    background-color: $online;
-    position: absolute;
+.menager-list {
+  display: flex;
+  align-items: center;
+  position: relative;
+
+  &:hover {
+    color: $brand-main-color;
+    cursor: pointer;
   }
+}
+
+.online-dot {
+  z-index: 2;
+  border-radius: 50%;
+  width: 13px;
+  height: 12px;
+  left: 36px;
+  top: 0;
+  background-color: $online;
+  position: absolute;
+}

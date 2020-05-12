@@ -1,5 +1,3 @@
-
-
 .form-field {
   padding: 4px;
   margin: 10px auto;
@@ -11,9 +9,13 @@
   width: 400px;
 }
 
+.form {
+  display: block;
+}
+
 #personal-data .row {
   border-bottom: solid $nav-main-color 1px;
-  // display: block;
+
   &:last-child {
     border-bottom: none;
   }

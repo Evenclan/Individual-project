@@ -3,45 +3,36 @@ function toggleMenu(visible) {
 }
 
 const menuButton = document.querySelector('.hamburger-btn-top');
-menuButton.classList.remove('active');
+menuButton.classList.remove('show');
 
 document.querySelector('.hamburger-btn-top').addEventListener('click', function(e) {
   e.preventDefault();
   toggleMenu();
 });
 
-// const menuToggle = document.querySelector('.side-nav');
-// const hamburgerBtnTop = document.querySelector('.hamburger-btn-side');
-// const container = document.querySelector('.container');
-// const topNav = document.querySelector('.top-nav');
-// const allPages = document.querySelectorAll('.nav-links li');
+// const activeContainers = document.querySelectorAll('.active');
 
-// console.log(menuToggle);
-
-// hamburgerBtnTop.addEventListener('click', function () {
-//   menuToggle.classList.toggle('hidden');
-//   container.classList.toggle('full-size');
-//   topNav.classList.toggle('full-size');
-//   console.log('lol');
-// });
-
-// function activatePage(event) {
-//   event.preventDefault();
-//   const clickedElement = this;
-
-//   for (let activePage of allPages) {
-//     if (clickedElement !== activePage) activePage.classList.remove('active');
-//   }
-
-//   clickedElement.classList.add('active');
-
-//   console.log(allPages);
+// for (let activeContainer of activeContainers) {
+//   activeContainer.classList.remove('active');
+//   console.log(activeContainer);
 // }
 
+const links = document.querySelectorAll('.nav-link');
+
+for (let link of links) {
+  link.addEventListener('click', activatePage);
+}
 
 
 
+function activatePage(event) {
+  event.preventDefault();
+  const clickedElement = this;
 
+  clickedElement.classList.add('active');
+
+  console.log('hello');
+}
 
 
 

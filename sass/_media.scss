@@ -16,107 +16,106 @@
   .form-field {
     flex-direction: column;
     width: 200px;
-    & input {
-      margin: none;
-    }
-    & label {
-      text-align: center;
-      margin-bottom: 5px;
-    }
   }
 
-  .side-nav {
-    left: -400px;
-    // animation: fadeIn ease 0.4s;
-    // animation-timing-function: linear;
-    // animation-fill-mode: forwards;
-    opacity: 0;
+  input {
+    margin: none;
   }
 
-  .show {
-    animation: none;
-    left: 0;
-    z-index: 6;
+  label {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+}
+
+.side-nav {
+  left: -400px;
+  // animation: fadeIn ease 0.4s;
+  // animation-timing-function: linear;
+  // animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+.show {
+  animation: none;
+  left: 0;
+  z-index: 6;
+  opacity: 1;
+}
+
+.top-nav {
+  animation: fullWidth ease 0.01s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  width: 100%;
+  justify-content: flex-start;
+  background: $nav-main-background;
+  border-bottom: none;
+
+  .logo-top-nav {
+    display: block;
+  }
+}
+
+.container {
+  animation: fullWidth ease 0.45s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  width: calc(100% - 20px);
+  z-index: 3;
+}
+
+@keyframes fadeIn {
+  0% {
     opacity: 1;
-
   }
 
-  .top-nav {
-    animation: fullWidth ease 0.01s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    width: 100%;
-    justify-content: flex-start;
-    background: $nav-main-background;
-    border-bottom: none;
-    .logo-top-nav {
-      display: block;
-    }
+  25% {
+    left: -100px;
   }
 
-  .container {
-    animation: fullWidth ease 0.45s;
-    animation-timing-function: linear;
-    animation-fill-mode: forwards;
-    width: calc(100% - 20px);
-    z-index: 3
+  50% {
+    opacity: 0.5;
+    left: -200px;
   }
 
-  // .calender {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-
-  @keyframes fadeIn {
-    0% {
-      opacity: 1;
-    }
-
-    25% {
-      left: -100px;
-    }
-
-    50% {
-      opacity: 0.5;
-      left: -200px;
-    }
-    75% {
-      opacity: 0.1;
-      left: -300px;
-    }
-    100% {
-      opacity: 0;
-      left: -400px;
-    }
+  75% {
+    opacity: 0.1;
+    left: -300px;
   }
 
-  @keyframes fadeOut {
-    0% {
-      left: -400px;
-      opacity: 0.1;
-    }
+  100% {
+    opacity: 0;
+    left: -400px;
+  }
+}
 
-    50% {
-      left: -200px;
-    }
-
-    100% {
-      left: 0;
-      opacity: 1;
-    }
+@keyframes fadeOut {
+  0% {
+    left: -400px;
+    opacity: 0.1;
   }
 
-  @keyframes fullWidth {
-    20% {
-      left: 200px;
-    }
+  50% {
+    left: -200px;
+  }
 
-    50% {
-      left: 100px;
-    }
+  100% {
+    left: 0;
+    opacity: 1;
+  }
+}
 
-    100% {
-      left: 0;
-    }
+@keyframes fullWidth {
+  20% {
+    left: 200px;
+  }
+
+  50% {
+    left: 100px;
+  }
+
+  100% {
+    left: 0;
   }
 }

@@ -4,8 +4,9 @@
   border-radius: 4px;
   background-color: $brand-main-color;
   margin-left: 20px;
+
   &:hover {
-    background-color: #F69332;
+    background-color: #f69332;
   }
 }
 
@@ -17,10 +18,12 @@
   font-size: 20px;
   border: none;
   margin: 7px;
+
   &:hover {
-    background-color: #F69332;
+    background-color: #f69332;
     cursor: pointer;
   }
+
   &.cancel {
     background-color: grey;
   }
@@ -35,12 +38,13 @@
   border-radius: 3px;
   background-color: #fff;
   box-shadow: 1px 2px;
+
   .fa-circle {
     margin-right: 6px;
   }
 
   .i-signups {
-    color: #8DBEC8;
+    color: #8dbec8;
   }
 
   .i-ftd {

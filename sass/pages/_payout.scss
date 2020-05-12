@@ -1,13 +1,14 @@
 .detail-table {
-    overflow-x: auto;
-    display: block;
+  overflow-x: auto;
+  display: block;
 }
 
 th {
-    padding: 10px;
-    &:hover {
-        background-color: $nav-hover-color;
-    }
+  padding: 10px;
+
+  &:hover {
+    background-color: $nav-hover-color;
+  }
 }
 
 .table-nav {
@@ -19,13 +20,16 @@ th {
   height: 30px;
   padding: 5px;
   text-align: center;
-  color: #8DBEC8;
+  color: #8dbec8;
+
   &:hover {
     background-color: $nav-hover-color;
   }
+
   &:first-child {
     margin-left: 20px;
   }
+
   &:last-child {
     margin-right: 20px;
   }

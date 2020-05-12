@@ -61,7 +61,7 @@
         <div class="row modal-row-left">
           <div class="modal-form-field chat-field">
             <label for="name"></label>
-            <input style="font-family: FontAwesome;" type="text" name="name" id="modal-chat"
+            <input type="text" name="name" id="modal-chat"
               placeholder="&#xf075 Enter the message">
           </div>
 
@@ -84,12 +84,12 @@
         <div class="modal-form">
           <div class="modal-form-field">
             <label for="name"></label>
-            <input style="font-family: FontAwesome;" type="text" name="name" id="modal-name"
+            <input type="text" name="name" id="modal-name"
               placeholder="&#xf007 Login name">
           </div>
           <div class="modal-form-field">
             <label for="name"></label>
-            <input style="font-family: FontAwesome;" type="text" name="name" id="modal-password"
+            <input type="text" name="name" id="modal-password"
               placeholder="&#xf084 password">
           </div>
           <div class="modal-form-field">
@@ -103,7 +103,7 @@
 
   <!-- Overlay div ends here -->
 
-  <nav class="side-nav show">
+  <nav class="side-nav">
     <div class="logo">
       <span class="main-logo">Just do it</span>
       <!-- <i class="fas fa-bars hamburger-btn-side"></i> -->
@@ -243,10 +243,10 @@
         <table>
           <thead>
             <tr class="link-table">
-              <th>Date</th>
-              <th>Amount ($)</th>
-              <th>Deal</th>
-              <th>Account</th>
+              <th scope="col">Date</th>
+              <th scope="col">Amount ($)</th>
+              <th scope="col">Deal</th>
+              <th scope="col">Account</th>
             </tr>
           </thead>
 
@@ -504,14 +504,13 @@
     </section>
   </div>
 
-  <div class="container">
+  <div class="container active">
     <section id="personal-data">
       <div class="title">
         Personal Data
       </div>
 
-      <div class="row">
-        <form>
+      <div class="row form">
         <div class="form-field">
 
           <label for="name">Name</label>
@@ -532,11 +531,9 @@
           <label for="name">Phone number</label>
           <input type="text" name="name" id="number" required>
         </div>
-        </form>
       </div>
 
-      <div class="row">
-        <form>
+      <div class="row form">
         <div class="form-field">
 
           <label for="name">Skype</label>
@@ -552,21 +549,17 @@
           <label for="name">MSN</label>
           <input type="text" name="name" id="MSN">
         </div>
-        </form>
       </div>
 
-      <div class="row">
-        <form>
+      <div class="row form">
         <div class="form-field">
           <label for="name">Wallet</label>
           <input type="text" name="name" id="Wallet" required>
         </div>
-        </form>
       </div>
 
 
-      <div class="row">
-        <form>
+      <div class="row form">
         <div class="form-field">
 
           <label for="name">Password</label>
@@ -577,7 +570,6 @@
           <label for="name">Repeat</label>
           <input type="text" name="name" id="Repeat" required>
         </div>
-        </form>
       </div>
 
       <div class="row">
@@ -611,17 +603,17 @@
 
           <thead>
             <tr>
-              <th>Tracker name</th>
-              <th>Initiated date</th>
-              <th>Visits</th>
-              <th>Unique</th>
-              <th>Signups</th>
-              <th>FTD</th>
-              <th>Depositors</th>
-              <th>Deposits ($)</th>
-              <th>Payout ($) </th>
-              <th>Turnover</th>
-              <th>Deal</th>
+              <th scope="col">Tracker name</th>
+              <th scope="col">Initiated date</th>
+              <th scope="col">Visits</th>
+              <th scope="col">Unique</th>
+              <th scope="col">Signups</th>
+              <th scope="col">FTD</th>
+              <th scope="col">Depositors</th>
+              <th scope="col">Deposits ($)</th>
+              <th scope="col">Payout ($) </th>
+              <th scope="col">Turnover</th>
+              <th scope="col">Deal</th>
             </tr>
           </thead>
 

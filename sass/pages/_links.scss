@@ -7,8 +7,10 @@ table {
 
 .link-table {
   border-bottom: 1px solid $nav-main-color;
+
   &:hover {
     background-color: $nav-hover-color;
+
     .table-icons {
       opacity: 1;
     }
