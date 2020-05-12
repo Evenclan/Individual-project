@@ -23,8 +23,6 @@ for (let link of links) {
   link.addEventListener('click', activatePage);
 }
 
-
-
 function activatePage(event) {
   event.preventDefault();
   const clickedElement = this;
@@ -33,8 +31,6 @@ function activatePage(event) {
 
   console.log('hello');
 }
-
-
 
 
 
