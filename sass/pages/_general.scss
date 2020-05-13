@@ -13,8 +13,7 @@
 }
 
 .amount {
-  justify-content: center;
-  text-align: left;
+  font-weight: 500;
 }
 
 .data {
@@ -34,8 +33,8 @@
 .start-date,
 .end-date {
   height: 20px;
-  padding: 5px 0 5px 20px;
-  width: 120px;
+  padding: 0 10px;
+  width: 170px;
   border: none;
 
   &:first-child {

@@ -346,6 +346,7 @@ template {
 
 body {
   background-color: #eee;
+  font-family: 'Roboto', sans-serif;
 }
 
 .side-nav {
@@ -480,11 +481,8 @@ body {
 }
 
 /* Overall rules */
-body {
-  font-family: "FontAwesome";
-}
-
 .overlay {
+  font-family: 'Roboto', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -501,6 +499,10 @@ body {
   display: none;
 }
 
+input[type=text] {
+  font-family: "FontAwesome";
+}
+
 .overlay::webkit-scrollbar {
   display: none;
 }
@@ -511,7 +513,6 @@ body {
 }
 
 .modal {
-  max-width: 800px;
   margin: auto;
   background-color: #ffffff;
   position: relative;
@@ -528,10 +529,6 @@ body {
   right: 0;
   padding: 5px 10px;
   cursor: pointer;
-}
-
-.modal-container {
-  min-width: 280px;
 }
 
 .modal-container-chat {
@@ -885,9 +882,7 @@ a {
 }
 
 .amount {
-  -ms-flex-pack: center;
-      justify-content: center;
-  text-align: left;
+  font-weight: 500;
 }
 
 .data {
@@ -909,8 +904,8 @@ a {
 .start-date,
 .end-date {
   height: 20px;
-  padding: 5px 0 5px 20px;
-  width: 120px;
+  padding: 0 10px;
+  width: 170px;
   border: none;
 }
 

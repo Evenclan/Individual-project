@@ -1,10 +1,7 @@
 /* Overall rules */
 
-body {
-  font-family: "FontAwesome";
-}
-
 .overlay {
+  font-family: 'Roboto', sans-serif;
   position: fixed;
   top: 0;
   left: 0;
@@ -19,6 +16,10 @@ body {
   display: none;
 }
 
+input[type=text] {
+  font-family: "FontAwesome";
+}
+
 .overlay::webkit-scrollbar {
   display: none;
 }
@@ -28,7 +29,6 @@ body {
 }
 
 .modal {
-  max-width: 800px;
   margin: auto;
   background-color: #ffffff;
   position: relative;
@@ -47,10 +47,6 @@ body {
   cursor: pointer;
 }
 
-.modal-container {
-  min-width: 280px;
-}
-
 .modal-container-chat {
   width: 800px;
 }
@@ -58,7 +54,6 @@ body {
 .chat-box {
   height: 320px;
 }
-
 
 .title.modal-title {
   font-size: 1rem;
