@@ -17,20 +17,20 @@ document.querySelector('.hamburger-btn-top').addEventListener('click', function(
 //   console.log(activeContainer);
 // }
 
-const links = document.querySelectorAll('.nav-link');
+// const links = document.querySelectorAll('.nav-link');
 
-for (let link of links) {
-  link.addEventListener('click', activatePage);
-}
+// for (let link of links) {
+//   link.addEventListener('click', activatePage);
+// }
 
-function activatePage(event) {
-  event.preventDefault();
-  const clickedElement = this;
+// function activatePage(event) {
+//   event.preventDefault();
+//   const clickedElement = this;
 
-  clickedElement.classList.add('active');
+//   clickedElement.classList.add('active');
 
-  console.log('hello');
-}
+//   console.log('hello');
+// }
 
 
 
