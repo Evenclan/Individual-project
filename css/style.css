@@ -881,11 +881,8 @@ a {
   border-bottom: solid #979797 1px;
 }
 
-.amount {
-  font-weight: 500;
-}
-
 .data {
+  font-weight: 600;
   border-bottom: solid grey 1px;
   padding: 5px;
   width: 35%;
@@ -976,7 +973,7 @@ td {
   display: flex;
   -ms-flex-pack: justify;
       justify-content: space-between;
-  width: 400px;
+  width: 500px;
 }
 
 .form {
