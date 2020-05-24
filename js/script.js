@@ -10,31 +10,36 @@ document.querySelector('.hamburger-btn-top').addEventListener('click', function(
   toggleMenu();
 });
 
-// const activeContainers = document.querySelectorAll('.active');
+const activeContainers = document.querySelectorAll('.active');
 
-// for (let activeContainer of activeContainers) {
-//   activeContainer.classList.remove('active');
-//   console.log(activeContainer);
-// }
+for (let activeContainer of activeContainers) {
+  activeContainer.classList.remove('active');
+  console.log(activeContainer);
+}
 
-// const links = document.querySelectorAll('.nav-link');
+const links = document.querySelectorAll('.nav-link');
 
-// for (let link of links) {
-//   link.addEventListener('click', activatePage);
-// }
+for (let link of links) {
+  link.addEventListener('click', activatePage);
+}
 
-// function activatePage(event) {
-//   event.preventDefault();
-//   const clickedElement = this;
+function activatePage(event) {
+  event.preventDefault();
 
-//   clickedElement.classList.add('active');
+  const href = this.getAttribute('href');
 
-//   console.log('hello');
-// }
+  const link = document.querySelector(href);
 
+  console.log(href);
+  console.log(link);
 
+  for (let activeContainer of activeContainers) {
+    activeContainer.classList.remove('active');
+    console.log(activeContainer);
+  }
 
-
+  link.parentElement.classList.add('active');
+}
 
 function closeModal() {
   document.getElementById('overlay').classList.remove('show');
